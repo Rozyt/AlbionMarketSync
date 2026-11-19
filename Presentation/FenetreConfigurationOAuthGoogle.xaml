@@ -1,0 +1,62 @@
+<Window x:Class="AlbionMarketSync.Presentation.FenetreConfigurationOAuthGoogle"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Connexion API d'authentification Google OAuth 2.0"
+        Width="580" Height="420"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        Background="#0F172A"
+        Foreground="#F8FAFC"
+        FontFamily="Segoe UI">
+
+    <Grid Margin="22">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="14" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="16" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="14" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="🔐 API d'Authentification Google OAuth 2.0" FontSize="18" FontWeight="Bold" Foreground="#F59E0B" />
+
+        <Border Grid.Row="2" Background="#1E293B" CornerRadius="8" Padding="14,10" BorderBrush="#334155" BorderThickness="1">
+            <StackPanel>
+                <TextBlock TextWrapping="Wrap" FontSize="12.5" Foreground="#CBD5E1">
+                    Pour ouvrir la page de connexion Google dans votre navigateur, renseignez une seule fois votre Client ID et Client Secret OAuth 2.0 (type « Application de bureau » dans Google Cloud Console).
+                </TextBlock>
+                <Button Content="🌐 Ouvrir Google Cloud Console (Créer un ID Client OAuth)"
+                        HorizontalAlignment="Left"
+                        Margin="0,8,0,0"
+                        Padding="12,5"
+                        Background="#334155"
+                        Foreground="#38BDF8"
+                        FontWeight="SemiBold"
+                        BorderThickness="0"
+                        Cursor="Hand"
+                        Click="SurClicOuvrirConsoleGoogle" />
+            </StackPanel>
+        </Border>
+
+        <StackPanel Grid.Row="4">
+            <TextBlock Text="1. Identifiant Client OAuth 2.0 (Client ID) :" FontSize="12.5" FontWeight="SemiBold" Foreground="#E2E8F0" Margin="0,0,0,5" />
+            <TextBox x:Name="ChampClientId" Background="#1E293B" Foreground="#F8FAFC" BorderBrush="#475569" Padding="10,7" FontSize="13" />
+            <TextBlock Text="Exemple : 1234567890-abcdefg.apps.googleusercontent.com" FontSize="11" Foreground="#64748B" Margin="0,3,0,0" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="6">
+            <TextBlock Text="2. Code Secret Client OAuth 2.0 (Client Secret) :" FontSize="12.5" FontWeight="SemiBold" Foreground="#E2E8F0" Margin="0,0,0,5" />
+            <TextBox x:Name="ChampClientSecret" Background="#1E293B" Foreground="#F8FAFC" BorderBrush="#475569" Padding="10,7" FontSize="13" />
+            <TextBlock Text="Exemple : GOCSPX-xxxxxxxxxxxxxxxxxxxxxx" FontSize="11" Foreground="#64748B" Margin="0,3,0,0" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="8" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="Annuler" Width="100" Padding="10,8" Margin="0,0,10,0" Background="#334155" Foreground="White" BorderThickness="0" Cursor="Hand" Click="SurClicAnnuler" />
+            <Button Content="🔐 Se connecter dans le navigateur Google" Padding="16,8" Background="#2563EB" Foreground="White" FontWeight="Bold" BorderThickness="0" Cursor="Hand" Click="SurClicValiderConnexion" />
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,120 @@
+{
+  "spreadsheetId": "1SRcjuuz8vVaPb9v4ow1COQyERDUS8_h2w9zYzQZidew",
+  "sheets": {
+    "indicePrix": {
+      "sheetId": 565413548,
+      "title": "Indice prix"
+    },
+    "coutDeCraft": {
+      "sheetId": 2132110722,
+      "title": "Cout de craft",
+      "readOnly": true
+    },
+    "selection": {
+      "sheetId": 0,
+      "title": "Sélection"
+    }
+  },
+  "protectedRanges": [
+    "'Indice prix'!I21:I25",
+    "'Indice prix'!I29:I33",
+    "'Indice prix'!I37:I41",
+    "'Cout de craft'!A1:Z100",
+    "'Sélection'!D4:D24",
+    "'Sélection'!G4:H24",
+    "'Sélection'!D29:D36",
+    "'Sélection'!G29:H36",
+    "'Sélection'!M4:M18",
+    "'Sélection'!P4:Q18",
+    "'Sélection'!W4:W18",
+    "'Sélection'!Z4:AA18",
+    "'Sélection'!M23:M36",
+    "'Sélection'!P23:Q36",
+    "'Sélection'!M40:M54",
+    "'Sélection'!P40:Q54"
+  ],
+  "rules": {
+    "refinedResources": {
+      "sheet": "Indice prix",
+      "columns": {
+        "LEATHER": "B",
+        "CLOTH": "C",
+        "PLANKS": "D",
+        "METALBAR": "E"
+      },
+      "tier2Row": 6,
+      "tier3Row": 7,
+      "tier4PlusFormula": "8 + (tier - 4) * 5 + enchantment"
+    },
+    "capeCrests": {
+      "sheet": "Indice prix",
+      "rowFormula": "tier + 1",
+      "columns": {
+        "CAPEITEM_FW_LYMHURST_BP": "I",
+        "CAPEITEM_FW_BRIDGEWATCH_BP": "J",
+        "CAPEITEM_FW_MARTLOCK_BP": "K",
+        "CAPEITEM_FW_THETFORD_BP": "L",
+        "CAPEITEM_FW_FORTSTERLING_BP": "M",
+        "CAPEITEM_FW_CAERLEON_BP": "N",
+        "CAPEITEM_HERETIC_BP": "O",
+        "CAPEITEM_DEMON_BP": "P",
+        "CAPEITEM_KEEPER_BP": "Q",
+        "CAPEITEM_MORGANA_BP": "R",
+        "CAPEITEM_UNDEAD_BP": "S",
+        "CAPEITEM_SMUGGLER_BP": "T",
+        "CAPEITEM_AVALON_BP": "U",
+        "CAPEITEM_FW_BRECILIEN_BP": "V"
+      }
+    },
+    "heartsAndTokens": {
+      "T1_FACTION_STEPPE_TOKEN_1": "'Indice prix'!H13",
+      "T1_FACTION_FOREST_TOKEN_1": "'Indice prix'!I13",
+      "T1_FACTION_HIGHLAND_TOKEN_1": "'Indice prix'!J13",
+      "T1_FACTION_SWAMP_TOKEN_1": "'Indice prix'!K13",
+      "T1_FACTION_MOUNTAIN_TOKEN_1": "'Indice prix'!L13",
+      "T1_FACTION_CAERLEON_TOKEN_1": "'Indice prix'!M13",
+      "QUESTITEM_TOKEN_AVALON": "'Indice prix'!N13",
+      "QUESTITEM_TOKEN_MISTS": "'Indice prix'!O13",
+      "T4_SKILLBOOK_STANDARD": "'Indice prix'!H16",
+      "QUESTITEM_TOKEN_ROYAL_T4": "'Indice prix'!K16",
+      "QUESTITEM_TOKEN_ROYAL_T5": "'Indice prix'!L16",
+      "QUESTITEM_TOKEN_ROYAL_T6": "'Indice prix'!M16",
+      "QUESTITEM_TOKEN_ROYAL_T7": "'Indice prix'!N16",
+      "QUESTITEM_TOKEN_ROYAL_T8": "'Indice prix'!O16"
+    },
+    "leatherJacketArtifacts": {
+      "sheet": "Indice prix",
+      "rowFormula": "17 + tier",
+      "columns": {
+        "ARTEFACT_ARMOR_LEATHER_MORGANA": "J",
+        "ARTEFACT_ARMOR_LEATHER_HELL": "K",
+        "ARTEFACT_ARMOR_LEATHER_UNDEAD": "L",
+        "ARTEFACT_ARMOR_LEATHER_FEY": "M",
+        "ARTEFACT_ARMOR_LEATHER_AVALON": "N"
+      }
+    },
+    "clothRobeArtifacts": {
+      "sheet": "Indice prix",
+      "rowFormula": "25 + tier",
+      "columns": {
+        "ARTEFACT_ARMOR_CLOTH_KEEPER": "J",
+        "ARTEFACT_ARMOR_CLOTH_HELL": "K",
+        "ARTEFACT_ARMOR_CLOTH_MORGANA": "L",
+        "ARTEFACT_ARMOR_CLOTH_FEY": "M",
+        "ARTEFACT_ARMOR_CLOTH_AVALON": "N"
+      }
+    },
+    "plateArmorArtifacts": {
+      "sheet": "Indice prix",
+      "rowFormula": "33 + tier",
+      "columns": {
+        "ARTEFACT_ARMOR_PLATE_UNDEAD": "J",
+        "ARTEFACT_ARMOR_PLATE_HELL": "K",
+        "ARTEFACT_ARMOR_PLATE_KEEPER": "L",
+        "ARTEFACT_ARMOR_PLATE_FEY": "M",
+        "ARTEFACT_ARMOR_PLATE_AVALON": "N"
+      }
+    }
+  }
+}
+

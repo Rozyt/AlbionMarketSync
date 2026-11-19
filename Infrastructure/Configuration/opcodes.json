@@ -1,0 +1,31 @@
+﻿{
+  "EnableSignatureAutoDiscovery": true,
+  "OperationCodes": {
+    "Join": 2,
+    "ChangeCluster": 35,
+    "AuctionGetOffers": 81,
+    "AuctionGetRequests": 82,
+    "AuctionGetItemAverageStats": 89
+  },
+  "ClusterCityMapping": {
+    "0007": "Thetford",
+    "0008": "Thetford",
+    "0301": "Thetford Portal",
+    "1002": "Lymhurst",
+    "1006": "Lymhurst",
+    "1301": "Lymhurst Portal",
+    "2004": "Bridgewatch",
+    "2002": "Bridgewatch",
+    "2301": "Bridgewatch Portal",
+    "3003": "Black Market",
+    "3005": "Caerleon",
+    "3008": "Caerleon",
+    "3004": "Martlock",
+    "3007": "Martlock",
+    "3301": "Martlock Portal",
+    "4002": "Fort Sterling",
+    "4006": "Fort Sterling",
+    "4301": "Fort Sterling Portal",
+    "5003": "Brecilien"
+  }
+}

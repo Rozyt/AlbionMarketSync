@@ -1,0 +1,26 @@
+{
+  "SpreadsheetId": "1SRcjuuz8vVaPb9v4ow1COQyERDUS8_h2w9zYzQZidew",
+  "ServiceAccountKeyPath": "Infrastructure/Configuration/service-account.json",
+  "CellMappingPath": "Infrastructure/Configuration/cell_mapping.json",
+  "OpcodesPath": "Infrastructure/Configuration/opcodes.json",
+  "ItemsPath": "Infrastructure/Configuration/items.json",
+  "SqliteCachePath": "Infrastructure/Logs/market_cache.db",
+  "GoogleOAuth": {
+    "ClientId": "",
+    "ClientSecret": ""
+  },
+  "Capture": {
+    "BpfFilter": "udp and (port 5056 or port 5055 or port 4535)",
+    "AlbionPorts": [ 5056, 5055, 4535 ],
+    "ReadTimeoutMs": 50
+  },
+  "Pricing": {
+    "Strategy": "MinSellOrder",
+    "WeightedAverageTopUnits": 10,
+    "SilverDivisor": 10000.0
+  },
+  "Sync": {
+    "DebounceWindowMs": 2500,
+    "EnableGoogleSheetsUpload": true
+  }
+}

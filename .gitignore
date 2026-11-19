@@ -1,0 +1,21 @@
+# Dossiers de build et SDK portable local
+.dotnet/
+.nuget/
+bin/
+obj/
+.vs/
+*.user
+*.suo
+
+# Journaux et cache SQLite local
+Infrastructure/Logs/
+*.log
+*.db
+*.db-shm
+*.db-wal
+*.jsonl
+
+# Clés privées et jetons Google (conservés localement, jamais exposés sur GitHub)
+Infrastructure/Configuration/service-account.json
+Infrastructure/Configuration/client_secrets.json
+Infrastructure/Configuration/JetonsGoogleOAuth/
